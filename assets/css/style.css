@@ -1,13 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #0a192f;
   padding: 0px 10px;
-  font-size: 16px;
+  font-size: 1rem;
 }
-/* all divs */
+
 div {
   border: 1px solid rgb(231, 223, 223);
 }
-/*  */
 
 .container {
   height: 100vh;
@@ -16,22 +22,68 @@ div {
   display: flex;
   flex-direction: row;
 }
-.container > div {
-}
 
+/* left side */
 .container .handles {
-  width: 100px;
+  width: 60px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
 }
 
-.handles div a{
- font-size: 1.5em;
- color: #a8b2d1;
- text-decoration:  none;
+.handles li {
+  list-style: none;
+  margin-bottom: 20px;
 }
+.email a:hover,
+.handles li:hover a{
+  color: #5ef3d0;
+  transform: translatey(-4px);
+}
+
+.handles li a {
+  font-size: 1.5rem;
+  color: #a8b2d1;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.email div::after,
+.handles ul::after {
+  content: "";
+  border-left: 1px solid #a8b2d1;
+  display: block;
+  margin: 0px auto;
+  height: 90px;
+  width: 0px;
+}
+
+/* left side end */
+
+/* right side */
+
+.container .email {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.email a {
+  text-decoration: none;
+  display: block;
+  writing-mode: vertical-rl;
+  font-size: 0.75;
+  color: #a8b2d1;
+  letter-spacing: 0.1em;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* right side end */
 
 .container .main {
   flex: 1;
@@ -40,7 +92,7 @@ div {
 }
 
 .container .about {
- height: 250px;
+  height: 250px;
 }
 
 .container .projects {
@@ -50,20 +102,9 @@ div {
 .container .in-touch {
   height: 150px;
 }
-.container .email {
-  width: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
 
-.email span{
-  writing-mode: vertical-rl;
-}
-
-footer .created-by{
-  height: 30px ;
+footer .created-by {
+  height: 30px;
 }
 
 /* media queries */
@@ -75,7 +116,7 @@ footer .created-by{
     display: none;
   }
 
-  footer .footer-handles{
-    height: 70px ;
+  footer .footer-handles {
+    height: 70px;
   }
 }
