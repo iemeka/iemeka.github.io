@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +12,7 @@ body {
   background-color: #0a192f;
   padding: 0px 10px;
   font-size: 1rem;
+  font-family: "Roboto", sans-serif;
 }
 
 div {
@@ -25,7 +29,7 @@ div {
 
 /* left side */
 .container .handles {
-  width: 60px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -37,7 +41,7 @@ div {
   margin-bottom: 20px;
 }
 .email a:hover,
-.handles li:hover a{
+.handles li:hover a {
   color: #5ef3d0;
   transform: translatey(-4px);
 }
@@ -64,7 +68,7 @@ div {
 /* right side */
 
 .container .email {
-  width: 60px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -78,21 +82,56 @@ div {
   font-size: 0.75;
   color: #a8b2d1;
   letter-spacing: 0.1em;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   margin-bottom: 25px;
   transition: transform 0.3s ease-in-out;
+  font-weight: 100;
 }
 
 /* right side end */
 
+/* start main */
 .container .main {
   flex: 1;
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
 }
 
 .container .about {
-  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about .intro h4 {
+  color: #5ef3d0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+.about .name h1 {
+  color: #ccd6f6;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.about .short-detail h2 {
+  color: #8892b0;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  font-weight: 700 ;
+}
+.about .short-detail span {
+  color: #8892b0;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-size: 1rem;
+  font-weight: 700 ;
 }
 
 .container .projects {
