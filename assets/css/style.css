@@ -119,6 +119,11 @@ div {
   letter-spacing: 1px;
 }
 
+.about .short-detail{
+  padding: 0px;
+  margin: 0px;
+}
+
 .about .short-detail h2 {
   color: #8892b0;
   line-height: 1;
@@ -126,11 +131,11 @@ div {
   font-size: 3rem;
   font-weight: 700 ;
 }
-.about .short-detail span {
+.about .short-detail p {
   color: #8892b0;
   letter-spacing: 1px;
   line-height: 1;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700 ;
 }
 
