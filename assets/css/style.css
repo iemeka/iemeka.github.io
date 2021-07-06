@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 * {
   margin: 0;
@@ -161,22 +161,72 @@ div {
   padding-top: 20px;
 }
 
-.projects .project-head{
+.projects .project-head {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 
-.projects .project-head h3{
-  color:#ccd6f6 ;
-  font-size: 1.5rem;
+.projects .project-head h3 {
+  color: #ccd6f6;
+  font-size: min(max(1rem, 1.9vw), 1.5rem);
 }
 
-.projects .project-head .line-divider{
+.projects .project-head .line-divider {
   border-top: 0.5px solid #233554;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   margin-left: 31px;
+}
+
+.projects .project-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.projects .project {
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  background-color: #112240;
+  justify-content: space-between;
+  width: 250px;
+  height: 150px;
+}
+
+.projects .project .title h3 {
+  color: #ccd6f6;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.projects .project .detail span {
+  color: #a6afcf;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.projects .project .built-with {
+  display: flex;
+  justify-content: space-around;
+}
+
+.projects .project .built-with span {
+  color: #939dbd;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.projects .project .icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.projects .project .icons i {
+  color:#a6afcf ;
 }
 
 .container .in-touch {
@@ -201,10 +251,8 @@ footer .created-by {
   }
 }
 
-
 @media only screen and (max-width: 500px) {
-  .about .detail {
-    max-width: 650px;
-    font-size: 1.19rem;
+  .projects .project-head .line-divider {
+    max-width: 209px;
   }
 }
