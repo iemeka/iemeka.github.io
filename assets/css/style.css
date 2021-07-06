@@ -12,6 +12,7 @@ body {
   padding: 0px 10px;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
+  min-height: 100%;
 }
 
 div {
@@ -19,7 +20,7 @@ div {
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
   max-width: 1800px;
   margin: 0px auto;
   display: flex;
@@ -238,7 +239,7 @@ div {
 .projects .project .built-with span {
   color: #939dbd;
   font-family: "Roboto Mono", monospace;
-  font-size: 0.9rem;
+  font-size: 0.79rem;
   font-weight: 100;
 }
 
@@ -253,10 +254,25 @@ div {
 
 .container .in-touch {
   height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .in-touch h1 {
+  color: #ccd6f6;
+}
+
+.container .in-touch p {
+  color: #ccd6f6;
 }
 
 footer .created-by {
   height: 30px;
+  color: #8a95b2;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 /* media queries */
@@ -281,12 +297,8 @@ footer .created-by {
   .projects .project-body {
     justify-content: center;
   }
-
-
 }
 
 @media only screen and (max-width: 415px) {
- /* begin adjustments from this pioonts */
-
- 
+  /* begin adjustments from this pioonts */
 }
