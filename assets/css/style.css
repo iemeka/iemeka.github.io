@@ -24,6 +24,7 @@ div {
   margin: 0px auto;
   display: flex;
   flex-direction: row;
+  padding: 0 15px;
 }
 
 /* left side */
@@ -177,7 +178,8 @@ div {
   border-top: 0.5px solid #233554;
   width: 100%;
   max-width: 400px;
-  margin-left: 31px;
+  display: block;
+  margin: 0 31px;
 }
 
 .projects .project-body {
@@ -185,6 +187,11 @@ div {
   flex-direction: row;
   justify-content: flex-start;
   padding: 10px;
+  flex-wrap: wrap;
+}
+.projects .project-body a {
+  text-decoration: none;
+  margin: 15px;
 }
 
 .projects .project {
@@ -194,22 +201,22 @@ div {
   background-color: #112240;
   justify-content: space-between;
   width: 300px;
-  height: 160px;
+  height: 210px;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .projects .project:hover .title h3 {
- color: #5ef3d0;
+  color: #5ef3d0;
 }
 
 .projects .project:hover .icons i {
   color: #5ef3d0;
- }
+}
 
 .projects .project:hover {
   transform: translateY(-5px);
- }
+}
 
 .projects .project .title h3 {
   color: #ccd6f6;
@@ -241,7 +248,7 @@ div {
 }
 
 .projects .project .icons i {
-  color:#a6afcf ;
+  color: #a6afcf;
 }
 
 .container .in-touch {
@@ -261,13 +268,25 @@ footer .created-by {
     display: none;
   }
 
+  .projects .project-head {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   footer .footer-handles {
     height: 70px;
   }
+
+  .projects .project-body {
+    justify-content: center;
+  }
+
+
 }
 
-@media only screen and (max-width: 500px) {
-  .projects .project-head .line-divider {
-    max-width: 209px;
-  }
+@media only screen and (max-width: 415px) {
+ /* begin adjustments from this pioonts */
+
+ 
 }
