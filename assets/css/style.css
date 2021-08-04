@@ -20,6 +20,19 @@
   --footer: #8a95b2;
 }
 
+.lightmode {
+  --bg: #f5e6d0;
+  --highlight: #a10c2f;
+  --bigtext: #332909;
+  --bigtexti: #776d4f;
+  --line: #dccaab;
+  --project-detail: #595030;
+  --project-bg: #eeddbf;
+  --built-with: #6c6242;
+  --social-meida: #574d2e;
+  --footer: #756a4d;
+}
+
 body {
   background-color: var(--bg);
   padding: 0px 10px;
@@ -112,11 +125,22 @@ body {
 /* right side end */
 
 /* start main */
+
+.container .main-header {
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container .main-header .mode-case {
+  border: 1px solid var(--bigtext);
+  width: 100px;
+}
+
 .container .main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
 }
 
 .container .about {
