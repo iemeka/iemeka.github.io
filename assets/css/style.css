@@ -130,11 +130,25 @@ body {
   height: 40px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .container .main-header .mode-case {
-  border: 1px solid var(--bigtext);
-  width: 100px;
+  border: 2px solid var(--bigtext);
+  width: 70px;
+  border-radius: 8px;
+  padding: 4px;
+  display: flex;
+}
+
+.container .mode-case button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 0px;
+  background-color: var(--bg);
+  filter: invert(100%);
+  cursor: pointer;
 }
 
 .container .main {
