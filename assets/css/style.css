@@ -18,6 +18,7 @@
   --built-with: #939dbd;
   --social-meida: #a8b2d1;
   --footer: #8a95b2;
+  --moveBtn: 1px;
 }
 
 .lightmode {
@@ -31,6 +32,7 @@
   --built-with: #6c6242;
   --social-meida: #574d2e;
   --footer: #756a4d;
+  --moveBtn: 38px;
 }
 
 body {
@@ -149,6 +151,8 @@ body {
   background-color: var(--bg);
   filter: invert(100%);
   cursor: pointer;
+  transform: translateX(var(--moveBtn));
+  transition: transform 0.3s ease-in-out;
 }
 
 .container .main {
