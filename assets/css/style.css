@@ -19,6 +19,26 @@
   --social-meida: #a8b2d1;
   --footer: #8a95b2;
   --moveBtn: 1px;
+  --shadow: 0px;
+  --hoverTranform: -5px;
+}
+
+.lightmode-max {
+  --bg: #edf2f7;
+  --highlight: #feb2b2;
+  --bigtext: #2b6cb0;
+  --bigtexti: #48bb78d2;
+  --line: #38b2ac25;
+  --project-detail: #2b6bb0c9;
+  --project-bg: #ffffff;
+  --built-with: #2b6cb0;
+  --social-meida: #2b6cb0;
+  --footer: #756a4d;
+  --moveBtn: 38px;
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+  --hoverTranform: -1px;
+  --hoverBoxShadow: rgb(50 39 68 / 8%) 0px 0px 0.75rem,
+    rgb(50 39 68 / 32%) 0px 0px 1px, #08060b4b 0px 0.5rem 1rem -0.5rem;
 }
 
 .lightmode {
@@ -238,7 +258,7 @@ body {
 }
 
 .projects .project-head .line-divider {
-  border-top: 0.5px solid var(--line);
+  border-top: 1px solid var(--line);
   width: 100%;
   max-width: 400px;
   display: block;
@@ -267,6 +287,7 @@ body {
   height: 210px;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+  box-shadow: var(--shadow);
 }
 
 .projects .project:hover .title h3 {
@@ -278,7 +299,8 @@ body {
 }
 
 .projects .project:hover {
-  transform: translateY(-5px);
+  transform: translateY(var(--hoverTranform));
+  box-shadow: var(--hoverBoxShadow);
 }
 
 .projects .project .title h3 {
