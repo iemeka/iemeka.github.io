@@ -5,7 +5,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  transition: background-color 0.5s;
+  transition: background-color 0.5s ease-in-out;
 }
 
 :root {
@@ -160,7 +160,7 @@ body {
 .container .main-header .mode-case {
   border: 2px solid var(--bigtext);
   width: 70px;
-  border-radius: 8px;
+  border-radius: 21px;
   padding: 4px;
   display: flex;
   cursor: pointer;
@@ -289,7 +289,7 @@ body {
   justify-content: space-between;
   width: 300px;
   height: 210px;
-  transition: transform 0.3s, box-shadow 0.5s ease-in-out;
+  transition: transform 0.3s, box-shadow 0.5s, background-color 0.5s ease-in-out;
   cursor: pointer;
   box-shadow: var(--shadow);
 }
