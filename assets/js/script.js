@@ -1,4 +1,4 @@
-const modeSwitch = document.querySelector(".display-mode");
+const modeCase = document.querySelector(".mode-case");
 const states = ["lightmode-max", null, "lightmode", null];
 let mode = 1;
 const handleClick = (e) => {
@@ -6,5 +6,4 @@ const handleClick = (e) => {
   mode = (mode + 1) % states.length;
   document.documentElement.classList.add(states[mode]);
 };
-
-modeSwitch.addEventListener("click", handleClick);
+modeCase.addEventListener("click", handleClick);

@@ -161,6 +161,7 @@ body {
   border-radius: 8px;
   padding: 4px;
   display: flex;
+  cursor: pointer;
 }
 
 .container .mode-case button {
