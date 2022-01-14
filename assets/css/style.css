@@ -164,16 +164,17 @@ body {
 
 .container .main-header .mode-case {
   border: 2px solid var(--bigtext);
-  width: 70px;
+  width: 65px;
   border-radius: 21px;
   padding: 4px;
   display: flex;
   cursor: pointer;
+  margin-top:20px
 }
 
 .container .mode-case button {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   border: 0px;
   background-color: var(--bg);
